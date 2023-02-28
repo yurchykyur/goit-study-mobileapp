@@ -14,6 +14,9 @@
   --team-subtitle-color: #ffffff;
   --team-position-color: #ffffff;
   --footer-text-color: #ffffff;
+  --contact-title-color: #ffffff;
+  --contact-subtitle-color: #ffffff;
+  --contact-text-color: #ffffff;
 }
 
 body {
@@ -247,6 +250,7 @@ img {
 
 .team .foto {
   margin-bottom: 20px;
+  border-radius: 10px;
 }
 
 .team .subtitle {
@@ -330,6 +334,51 @@ img {
 /*  */
 /* CONTACT US */
 /*  */
+
+.contact .title {
+  margin: 0;
+  margin-bottom: 80px;
+
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.21;
+  color: var(--contact-title-color);
+
+  text-align: center;
+}
+
+.contact .subtitle {
+  margin: 0;
+  margin-bottom: 20px;
+
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.21;
+  color: var(--contact-subtitle-color);
+}
+
+.contact .text {
+  margin: 0;
+  margin-bottom: 80px;
+  max-width: 500px;
+
+  font-weight: 500;
+  line-height: 1.19;
+  color: var(--contact-text-color);
+}
+
+.contact-link .link {
+  margin: 0;
+
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.19;
+  color: var(--contact-text-color);
+}
+
+.contact-link .item:first-child {
+  margin-bottom: 12px;
+}
 
 /* End CONTACT US */
 
