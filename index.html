@@ -14,7 +14,10 @@
 
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
 
     <link rel="stylesheet" href="./css/styles.css" />
@@ -22,265 +25,316 @@
     <title>Mobileapp</title>
   </head>
   <body>
-    <header class="container">
-      <a href="./index.html" class="logo link">Mobileapp</a>
-      <nav>
-        <ul class="list nav-links">
-          <li>
-            <a href="./index.html" class="link">HOME</a>
-          </li>
+    <header class="header-background">
+      <div class="container header">
+        <a href="./index.html" class="logo link">Mobileapp</a>
+        <nav>
+          <ul class="list nav-links">
+            <li class="nav-links-item">
+              <a href="./index.html" class="link">HOME</a>
+            </li>
 
-          <li>
-            <a href="" class="link">FEATURES</a>
-          </li>
+            <li class="nav-links-item">
+              <a href="#features" class="link">FEATURES</a>
+            </li>
 
-          <li>
-            <a href="" class="link">TEAM</a>
-          </li>
+            <li class="nav-links-item">
+              <a href="#team" class="link">TEAM</a>
+            </li>
 
-          <li>
-            <a href="" class="link">TESTIMONIALS</a>
-          </li>
+            <li class="nav-links-item">
+              <a href="#testimonials" class="link">TESTIMONIALS</a>
+            </li>
 
-          <li>
-            <a href="" class="link">CONTACT</a>
-          </li>
-        </ul>
-      </nav>
+            <li class="nav-links-item">
+              <a href="#contact" class="link">CONTACT</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main>
       <!-- Hero section -->
 
-      <section class="container">
-        <h1 class="hero-title">Introducing Mobileapp</h1>
+      <section class="hero">
+        <div class="container hero-flex">
+          <div class="hero-description">
+            <h1 class="hero-title">Introducing Mobileapp</h1>
 
-        <p class="hero-subtitle">Maecenas vitae tellus sapien. Prasent</p>
+            <p class="hero-subtitle">Maecenas vitae tellus sapien. Prasent</p>
 
-        <ul class="list hero-list">
-          <li class="item">
-            <p>semper scelerisque tristique a enim</p>
-          </li>
+            <ul class="list hero-list">
+              <li class="item">
+                <p>semper scelerisque tristique a enim</p>
+              </li>
 
-          <li class="item">
-            <p>Integer ut mattis nulla, eget vehicula elit</p>
-          </li>
+              <li class="item">
+                <p>Integer ut mattis nulla, eget vehicula elit</p>
+              </li>
 
-          <li class="item">
-            <p>Prasent rutrum ac nunc et</p>
-          </li>
-        </ul>
+              <li class="item">
+                <p>Prasent rutrum ac nunc et</p>
+              </li>
+            </ul>
 
-        <button type="button" class="hero-button">Download</button>
-
-        <img
-          src="./images/iphone-1.png"
-          alt="mobileapp on screen phone"
-          width="459"
-        />
+            <button type="button" class="hero-button">Download</button>
+          </div>
+          <div class="hero-image">
+            <img
+              src="./images/iphone-1.png"
+              alt="mobileapp on screen phone"
+              class=""
+            />
+          </div>
+        </div>
       </section>
 
       <!-- KEY FEATURES -->
 
-      <section class="container">
-        <h2 class="features-title">KEY FEATURES</h2>
+      <section class="features" id="features">
+        <div class="container">
+          <h2 class="features-title">KEY FEATURES</h2>
 
-        <p class="features-text">
-          Nunc vulputate nibh sed congue facilisis. Curabitur posuere
-          scelerisque neque. In sit amet lectus non lacus sollicitudin cursus a
-          vitae felis. Praesent luctus mi quis nisi interdum eleifend.
-        </p>
+          <p class="features-text">
+            Nunc vulputate nibh sed congue facilisis. Curabitur posuere
+            scelerisque neque. In sit amet lectus non lacus sollicitudin cursus
+            a vitae felis. Praesent luctus mi quis nisi interdum eleifend.
+          </p>
 
-        <ul class="list">
-          <li>
-            <h3 class="features-subtitle">Amet varius</h3>
+          <ul class="list">
+            <li class="features-list-item">
+              <h3 class="features-subtitle">Amet varius</h3>
 
-            <p class="features-description">
-              Donec posuere augue venenatis, aliquet ligula ut, tempus quam.
-              Vivamus diam a iaculis malesuada
-            </p>
-          </li>
+              <p class="features-description">
+                Donec posuere augue venenatis, aliquet ligula ut, tempus quam.
+                Vivamus diam a iaculis malesuada
+              </p>
+            </li>
 
-          <li>
-            <h3 class="features-subtitle">Amet varius</h3>
+            <li class="features-list-item">
+              <h3 class="features-subtitle">Amet varius</h3>
 
-            <p class="features-description">
-              Donec posuere augue venenatis, aliquet ligula ut, tempus quam.
-              Vivamus diam a iaculis malesuada
-            </p>
-          </li>
+              <p class="features-description">
+                Donec posuere augue venenatis, aliquet ligula ut, tempus quam.
+                Vivamus diam a iaculis malesuada
+              </p>
+            </li>
 
-          <li>
-            <h3 class="features-subtitle">Amet varius</h3>
+            <li class="features-list-item">
+              <h3 class="features-subtitle">Amet varius</h3>
 
-            <p class="features-description">
-              Donec posuere augue venenatis, aliquet ligula ut, tempus quam.
-              Vivamus diam a iaculis malesuada
-            </p>
-          </li>
+              <p class="features-description">
+                Donec posuere augue venenatis, aliquet ligula ut, tempus quam.
+                Vivamus diam a iaculis malesuada
+              </p>
+            </li>
 
-          <li>
-            <h3 class="features-subtitle">Amet varius</h3>
+            <li class="features-list-item">
+              <h3 class="features-subtitle">Amet varius</h3>
 
-            <p class="features-description">
-              Donec posuere augue venenatis, aliquet ligula ut, tempus quam.
-              Vivamus diam a iaculis malesuada
-            </p>
-          </li>
+              <p class="features-description">
+                Donec posuere augue venenatis, aliquet ligula ut, tempus quam.
+                Vivamus diam a iaculis malesuada
+              </p>
+            </li>
 
-          <li>
-            <h3 class="features-subtitle">Amet varius</h3>
+            <li class="features-list-item">
+              <h3 class="features-subtitle">Amet varius</h3>
 
-            <p class="features-description">
-              Donec posuere augue venenatis, aliquet ligula ut, tempus quam.
-              Vivamus diam a iaculis malesuada
-            </p>
-          </li>
+              <p class="features-description">
+                Donec posuere augue venenatis, aliquet ligula ut, tempus quam.
+                Vivamus diam a iaculis malesuada
+              </p>
+            </li>
 
-          <li>
-            <h3 class="features-subtitle">Amet varius</h3>
+            <li class="features-list-item">
+              <h3 class="features-subtitle">Amet varius</h3>
 
-            <p class="features-description">
-              Donec posuere augue venenatis, aliquet ligula ut, tempus quam.
-              Vivamus diam a iaculis malesuada
-            </p>
-          </li>
-        </ul>
-        <img src="./images/iphone-2.jpg" alt="idea of features" width="396" />
+              <p class="features-description">
+                Donec posuere augue venenatis, aliquet ligula ut, tempus quam.
+                Vivamus diam a iaculis malesuada
+              </p>
+            </li>
+          </ul>
+          <img
+            src="./images/iphone-2.png"
+            alt="idea of features"
+            width="396"
+            class="features-image"
+          />
+        </div>
       </section>
 
       <!-- WATCH THE VIDEO -->
 
-      <section class="container">
-        <h2 class="watch-title">WATCH THE VIDEO</h2>
+      <section class="watch">
+        <div class="container watch-container">
+          <div class="watch-content">
+            <h2 class="watch-title">WATCH THE VIDEO</h2>
 
-        <p class="watch-text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-          fringilla fringilla nisl congue congue. Maecenas nec condimentum
-          libero, at elementum mauris. Phasellus eget nisi dapibus, ultricies
-          nisl at, hendrerit risusuis ornare luctus id sollicitudin ante
-          lobortis at.
-        </p>
-
-        <img src="./images/iphone-flying.jpg" alt="video on phone screens" />
+            <p class="watch-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Suspendisse fringilla fringilla nisl congue congue. Maecenas nec
+              condimentum libero, at elementum mauris. Phasellus eget nisi
+              dapibus, ultricies nisl at, hendrerit risusuis ornare luctus id
+              sollicitudin ante lobortis at.
+            </p>
+          </div>
+          <img
+            src="./images/iphone-flying.png"
+            alt="video on phone screens"
+            width="501"
+            class="watch-image"
+          />
+        </div>
       </section>
 
       <!-- OUR TEAM -->
 
-      <section class="container team">
-        <h2 class="team-title">OUR TEAM</h2>
+      <section class="team" id="team">
+        <div class="container">
+          <h2 class="team-title">OUR TEAM</h2>
 
-        <p class="description">
-          Nunc vulputate nibh sed congue facilisis. Curabitur posuere
-          scelerisque neque. In sit amet lectus non lacus sollicitudin cursus a
-          vitae felis. Praesent luctus mi quis nisi interdum eleifend.
-        </p>
+          <p class="description">
+            Nunc vulputate nibh sed congue facilisis. Curabitur posuere
+            scelerisque neque. In sit amet lectus non lacus sollicitudin cursus
+            a vitae felis. Praesent luctus mi quis nisi interdum eleifend.
+          </p>
 
-        <ul class="list">
-          <li class="item">
-            <img
-              src="./images/team-1.jpg"
-              alt="Jon Doe"
-              width="264"
-              class="foto"
-            />
+          <ul class="team-list list">
+            <li class="item">
+              <img
+                src="./images/team-1.jpg"
+                alt="Jon Doe"
+                width="264"
+                class="foto"
+              />
 
-            <h3 class="subtitle">Jon Doe</h3>
+              <h3 class="subtitle">Jon Doe</h3>
 
-            <p class="position">Managing Direcor</p>
-          </li>
+              <p class="position">Managing Direcor</p>
+            </li>
 
-          <li class="item">
-            <img
-              src="./images/team-2.jpg"
-              alt="Jane Doe"
-              width="264"
-              class="foto"
-            />
+            <li class="item">
+              <img
+                src="./images/team-2.jpg"
+                alt="Jane Doe"
+                width="264"
+                class="foto"
+              />
 
-            <h3 class="subtitle">Jane Doe</h3>
+              <h3 class="subtitle">Jane Doe</h3>
 
-            <p class="position">Lead Designer</p>
-          </li>
+              <p class="position">Lead Designer</p>
+            </li>
 
-          <li class="item">
-            <img
-              src="./images/team-3.jpg"
-              alt="Jane Doe"
-              width="264"
-              class="foto"
-            />
+            <li class="item">
+              <img
+                src="./images/team-3.jpg"
+                alt="Jane Doe"
+                width="264"
+                class="foto"
+              />
 
-            <h3 class="subtitle">Jane Doe</h3>
+              <h3 class="subtitle">Jane Doe</h3>
 
-            <p class="position">Lead Developer</p>
-          </li>
+              <p class="position">Lead Developer</p>
+            </li>
 
-          <li class="item">
-            <img
-              src="./images/team-4.jpg"
-              alt="Jon Doe"
-              width="264"
-              class="foto"
-            />
+            <li class="item">
+              <img
+                src="./images/team-4.jpg"
+                alt="Jon Doe"
+                width="264"
+                class="foto"
+              />
 
-            <h3 class="subtitle">Jon Doe</h3>
+              <h3 class="subtitle">Jon Doe</h3>
 
-            <p class="position">Sr. UI Designer</p>
-          </li>
-        </ul>
+              <p class="position">Sr. UI Designer</p>
+            </li>
+          </ul>
+        </div>
       </section>
 
       <!-- TESTIMONIALS -->
 
-      <section class="container testimonials">
-        <h2 class="title">WHAT OUR COSTUMER’S SAY</h2>
+      <section class="testimonials" id="testimonials">
+        <div class="container">
+          <h2 class="title">WHAT OUR COSTUMER’S SAY</h2>
 
-        <img
-          src="./images/costumer-1.png"
-          alt="Jon Doe"
-          width="181"
-          class="foto"
-        />
+          <div class="testimonials-foto">
+            <img
+              src="./images/costumer-1.png"
+              alt="Jon Doe"
+              width="181"
+              class="foto"
+            />
+          </div>
 
-        <h3 class="subtitle">Jon Doe</h3>
+          <h3 class="subtitle">Jon Doe</h3>
 
-        <p class="company">Company Inc.</p>
+          <p class="company">Company Inc.</p>
 
-        <p class="response">
-          Vestibulum placerat nisl quis justo venenatis, et lacinia nunc
-          venenatis. semper libero nec sapien condimentum dignissim. Nunc ante
-          ligula, tempor in tellus in, gravida vestibulum justo. Nulla facilisi.
-          Nullam tristique eros quis nibh tempus, vel viverra dolor pretium. Nam
-          et vehicula leo. Vivamus hendrerit sit amet ante a tempus. Aenean
-          gravida massa et ante pulvinar, id
-        </p>
+          <p class="response">
+            Vestibulum placerat nisl quis justo venenatis, et lacinia nunc
+            venenatis. semper libero nec sapien condimentum dignissim. Nunc ante
+            ligula, tempor in tellus in, gravida vestibulum justo. Nulla
+            facilisi. Nullam tristique eros quis nibh tempus, vel viverra dolor
+            pretium. Nam et vehicula leo. Vivamus hendrerit sit amet ante a
+            tempus. Aenean gravida massa et ante pulvinar, id
+          </p>
+
+          <ul class="testimonials-dots list">
+            <li class="testimonials-dots-item">
+              <div class="dots active"></div>
+            </li>
+            <li class="testimonials-dots-item">
+              <div class="dots"></div>
+            </li>
+            <li class="testimonials-dots-item">
+              <div class="dots"></div>
+            </li>
+            <li class="testimonials-dots-item">
+              <div class="dots"></div>
+            </li>
+            <li class="testimonials-dots-item">
+              <div class="dots"></div>
+            </li>
+            <li class="testimonials-dots-item">
+              <div class="dots"></div>
+            </li>
+          </ul>
+        </div>
       </section>
 
       <!-- CONTACT US -->
 
-      <section class="container contact">
-        <h2 class="title">CONTACT US</h2>
+      <section class="contact" id="contact">
+        <div class="container">
+          <h2 class="title">CONTACT US</h2>
 
-        <h3 class="subtitle">Get in touch with us</h3>
+          <h3 class="subtitle">Get in touch with us</h3>
 
-        <p class="text">
-          Nunc urna est, tristique et varius at, pharetra nec enim. Quisque
-          rhoncus lacus fringilla nulla sollicitudin tristique.
-        </p>
+          <p class="text">
+            Nunc urna est, tristique et varius at, pharetra nec enim. Quisque
+            rhoncus lacus fringilla nulla sollicitudin tristique.
+          </p>
 
-        <address>
-          <ul class="list contact-link">
-            <li class="item">
-              <a href="tel:+xxxxxxxxxxxx" class="link">+xx-xxxx-xxxx-xx</a>
-            </li>
+          <address>
+            <ul class="list contact-link">
+              <li class="item">
+                <a href="tel:+xxxxxxxxxxxx" class="link">+xx-xxxx-xxxx-xx</a>
+              </li>
 
-            <li class="item">
-              <a href="mailto:goIteens@gmail.com" class="link"
-                >goIteens@gmail.com</a
-              >
-            </li>
-          </ul>
-        </address>
+              <li class="item">
+                <a href="mailto:goIteens@gmail.com" class="link"
+                  >goIteens@gmail.com</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
       </section>
     </main>
 

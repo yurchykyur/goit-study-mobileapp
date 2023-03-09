@@ -9,6 +9,8 @@
     #00c5eb -1.97%,
     #b544fe 89.43%
   );
+  --hero-button-text-color: #ffffff;
+  --hero-button-hover-color: #06071b;
   --watch-title-color: #ffffff;
   --watch-text-color: #ffffff;
   --team-subtitle-color: #ffffff;
@@ -17,13 +19,15 @@
   --contact-title-color: #ffffff;
   --contact-subtitle-color: #ffffff;
   --contact-text-color: #ffffff;
+  --background-color: #06071b;
+  --dots-color: #939eac;
+  --dots-color-active: #06071b;
 }
 
 body {
   font-family: 'Inter', sans-serif;
   color: var(--text-color);
   font-size: 16px;
-  font-style: normal;
   background-color: var(--body-background-color);
 }
 
@@ -45,7 +49,7 @@ body {
   padding-left: 16px;
   padding-right: 16px;
   width: calc(1248px + 16px + 16px);
-  background-color: rgb(0, 128, 68);
+  /* background-color: rgb(0, 128, 68); */
 }
 
 img {
@@ -59,7 +63,26 @@ img {
 /*-- header --*/
 /*  */
 
+.header-background {
+  position: absolute;
+  top: 26px;
+  width: 100%;
+  z-index: 1000;
+  background: linear-gradient(
+    90.03deg,
+    rgba(0, 197, 235, 0.3) -1.97%,
+    rgba(181, 68, 254, 0.3) 89.43%
+  );
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  /* outline: 1px solid red; */
+}
+
 .logo {
+  display: block;
   padding-top: 19px;
   padding-bottom: 19px;
   font-weight: 400;
@@ -68,7 +91,12 @@ img {
   color: var(--logo-text-color);
 }
 
+.header .nav-links {
+  display: flex;
+}
+
 .nav-links .link {
+  display: block;
   padding-top: 29px;
   padding-bottom: 28px;
   font-weight: 400;
@@ -77,16 +105,35 @@ img {
   color: var(--nav-text-color);
 }
 
+.nav-links-item + .nav-links-item {
+  margin-left: 40px;
+}
+
 /* End header */
 
 /*  */
 /*-- hero --*/
 /*  */
 
+.hero {
+  padding-top: 243px;
+  background-color: var(--background-color);
+}
+
+.hero-flex {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  background-image: url(../images/decoration.png);
+
+  background-repeat: no-repeat;
+  background-size: 541px;
+  background-position: 323px -16px;
+}
+
 .hero-title {
   margin-top: 0;
   margin-bottom: 12px;
-  font-weight: 700;
   font-size: 40px;
   line-height: 1.2;
 
@@ -113,50 +160,82 @@ img {
   color: var(--hero-text-color);
 }
 
-.hero-list .item:last-child {
+.hero-list {
   margin-bottom: 60px;
 }
 
 .hero-button {
-  margin: 0;
+  margin: 0 0 146px 0;
   padding: 11px 60px 12px 61px;
 
   display: inline-block;
 
-  font-family: 'Inter';
-  font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.19;
 
-  color: var(--hero-text-color);
+  color: var(--hero-button-text-color);
   background: var(--hero-button-background-color);
   border: none;
   border-radius: 5px;
   cursor: pointer;
 }
 
-/* End hero */
+.hero-button:hover,
+.hero-button:focus {
+  padding: 10px 59px 11px 60px;
+  background: var(--hero-button-hover-color);
+  border: 1px solid #ffffff;
+}
+
+.hero-button:active {
+  background: var(--hero-button-background-color);
+}
+
+.hero-image {
+  position: absolute;
+  z-index: 1000;
+  top: -126px;
+  left: 746px;
+  width: 574px;
+  /* margin-right: 39px; */
+  /* object-fit: fill; */
+}
+
+/* ------------------ End hero -----------------*/
 
 /*  */
-/* KEY FEATURES */
+/* ------------------ KEY FEATURES  ---------------*/
 /*  */
+
+.features {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.features .container {
+  position: relative;
+}
+
+/* .features .container {
+  background-image: url(../images/iphone-2.png);
+
+  background-repeat: no-repeat;
+  background-size: 396px;
+  background-position: 425px 237px;
+} */
 
 .features-title {
-  margin: 0;
-  margin-bottom: 80px;
+  margin: 0 0 80px 0;
 
-  font-weight: 700;
   font-size: 24px;
   line-height: 1.21;
   text-align: center;
 }
 
 .features-text {
-  margin-top: 0;
-  margin-right: auto;
-  margin-bottom: 80px;
-  margin-left: auto;
+  margin: 0 auto 141px auto;
+
   max-width: 886px;
 
   font-weight: 500;
@@ -165,9 +244,23 @@ img {
   text-align: center;
 }
 
+.features .list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 492px;
+}
+
+.features-list-item {
+  margin-bottom: 80px;
+}
+
+.features-list-item:nth-last-child(-n + 2) {
+  margin-bottom: 0;
+}
+
 .features-subtitle {
-  margin: 0;
-  margin-bottom: 13px;
+  margin: 0 0 13px 0;
 
   font-weight: 500;
 
@@ -176,12 +269,18 @@ img {
 
 .features-description {
   margin: 0;
-  margin-bottom: 80px;
   max-width: 220px;
 
   font-weight: 500;
   font-size: 14px;
   line-height: 1.21;
+}
+
+.features-image {
+  position: absolute;
+  top: 237px;
+  left: 425px;
+  z-index: 1000;
 }
 
 /* End KEY FEATURES */
@@ -190,11 +289,25 @@ img {
 /* WATCH THE VIDEO */
 /*  */
 
+.watch {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--background-color);
+}
+
+.watch-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.watch-content {
+  display: block;
+}
+
 .watch-title {
   margin: 0;
   margin-bottom: 20px;
 
-  font-weight: 700;
   font-size: 24px;
   line-height: 1.21;
 
@@ -212,17 +325,25 @@ img {
   color: var(--watch-text-color);
 }
 
+.watch-image {
+  margin-right: 105px;
+}
+
 /* End WATCH THE VIDEO */
 
 /*  */
 /* OUR TEAM */
 /*  */
 
+.team {
+  padding-top: 80px;
+  padding-bottom: 40px;
+}
+
 .team-title {
   margin: 0;
   margin-bottom: 80px;
 
-  font-weight: 700;
   font-size: 24px;
   line-height: 1.21;
   text-align: center;
@@ -241,7 +362,13 @@ img {
   text-align: center;
 }
 
+.team-list {
+  display: flex;
+  column-gap: 32px;
+}
+
 .team .list .item {
+  width: 288px;
   padding: 14px 12px 12px 12px;
   border-radius: 15px;
 
@@ -257,7 +384,6 @@ img {
   margin-top: 0;
   margin-bottom: 12px;
 
-  font-weight: 700;
   font-size: 18px;
   line-height: 1.22;
   text-align: center;
@@ -282,25 +408,34 @@ img {
 /* TESTIMONIALS */
 /*  */
 
+.testimonials {
+  padding-top: 40px;
+  padding-bottom: 80px;
+}
+
 .testimonials .title {
   margin: 0;
   margin-bottom: 40px;
 
-  font-weight: 700;
   font-size: 24px;
   line-height: 1.21;
   text-align: center;
 }
 
+.testimonials-foto {
+  display: flex;
+  justify-content: center;
+}
+
 .testimonials .foto {
   margin-bottom: 20px;
+  filter: drop-shadow(0px 2px 0px rgba(0, 0, 0, 0.25));
 }
 
 .testimonials .subtitle {
   margin: 0;
   margin-bottom: 12px;
 
-  font-weight: 700;
   font-size: 18px;
   line-height: 1.22;
   text-align: center;
@@ -319,7 +454,7 @@ img {
 .testimonials .response {
   margin-top: 0;
   margin-right: auto;
-  margin-bottom: 0;
+  margin-bottom: 40px;
   margin-left: auto;
   max-width: 886px;
 
@@ -329,15 +464,37 @@ img {
   text-align: center;
 }
 
+.testimonials-dots {
+  display: flex;
+  justify-content: center;
+  column-gap: 8px;
+}
+
+.dots {
+  width: 6px;
+  height: 6px;
+  background-color: var(--dots-color);
+  border-radius: 50%;
+}
+
+.testimonials-dots .dots.active {
+  background-color: var(--dots-color-active);
+}
+
 /* End OUR TEAM */
 
 /*  */
 /* CONTACT US */
 /*  */
 
+.contact {
+  padding-top: 80px;
+  padding-bottom: 208px;
+  background-color: var(--background-color);
+}
+
 .contact .title {
-  margin: 0;
-  margin-bottom: 80px;
+  margin: 0 0 80px 0;
 
   font-weight: 700;
   font-size: 24px;
@@ -348,8 +505,7 @@ img {
 }
 
 .contact .subtitle {
-  margin: 0;
-  margin-bottom: 20px;
+  margin: 0 0 20px 0;
 
   font-weight: 500;
   font-size: 24px;
@@ -383,13 +539,13 @@ img {
 /* End CONTACT US */
 
 /*  */
-/* footer */
+/*--------------------- footer -------------------*/
 /*  */
 
 .footer {
   padding-top: 22px;
   padding-bottom: 21px;
-  background-color: chocolate;
+  background-color: var(--background-color);
 
   border-top: 1px solid #ffffff;
 }
