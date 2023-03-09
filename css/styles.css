@@ -129,6 +129,8 @@ img {
   background-repeat: no-repeat;
   background-size: 541px;
   background-position: 323px -16px;
+
+  overflow: hidden;
 }
 
 .hero-title {
